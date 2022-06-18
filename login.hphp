@@ -1,0 +1,25 @@
+
+<?php
+
+    if(isset($_POST["name"])) {
+        $username = $_POST["name"];
+        $password = $_POST["pass"];
+        sayHi($username, $password);
+    }
+    else
+    {
+        sayHi("______","______");
+    }
+    echo 4*14 ;
+    echo "<br>";
+    echo sqrt(4);
+    function sayHi($username,$password)
+    {
+        echo "There was a gay person named $username! <br>";
+        echo "$username's password was $password. <br>";
+    }
+    $title ="My first Page";
+    $author = "Jani";
+    $wordcount = str_word_count(file_get_contents("login.hphp"));
+
+?>
